@@ -124,35 +124,29 @@
 
 @layer utilities {
   .font-display {
-    font-family: "Bricolage Grotesque", "Inter", ui-sans-serif, system-ui, sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings: "opsz" 96;
-    /* Кириллица в гротесках выглядит чуть «шире» латиницы — компенсируем */
-    letter-spacing: -0.035em;
-    line-height: 0.95;
-    word-spacing: -0.02em;
+    font-family: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
   }
-  /* Крупный hero-заголовок: жёстче трекинг, минимальный leading */
+  /* Крупный hero-заголовок */
   .display-hero {
-    font-family: "Bricolage Grotesque", "Inter", ui-sans-serif, system-ui, sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings: "opsz" 96;
-    font-weight: 700;
-    letter-spacing: -0.055em;
-    line-height: 0.86;
+    font-family: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.88;
   }
   /* Заголовки секций / карточек */
   .display-h2 {
-    font-family: "Bricolage Grotesque", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
     font-weight: 700;
     letter-spacing: -0.035em;
     line-height: 1.02;
   }
   .display-h3 {
-    font-family: "Bricolage Grotesque", "Inter", ui-sans-serif, system-ui, sans-serif;
-    font-weight: 600;
+    font-family: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
     letter-spacing: -0.025em;
-    line-height: 1.1;
+    line-height: 1.15;
   }
   /* UI-надписи (имена, мета) — кириллица любит нейтральный трекинг */
   .ui-label {
