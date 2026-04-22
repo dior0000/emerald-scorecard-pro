@@ -35,7 +35,7 @@ export const TournamentsSection = () => {
           <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-primary">
             Активные события
           </div>
-          <h2 className="font-display mt-2 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+          <h2 className="font-display mt-2 text-5xl font-bold text-foreground sm:text-6xl">
             Турниры
           </h2>
         </div>

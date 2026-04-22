@@ -17,8 +17,8 @@ export const TopBar = () => {
             <span className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/15" />
           </span>
           <span className="flex flex-col leading-none">
-            <span className="font-display text-[15px] font-semibold tracking-tight text-foreground">
-              MINSK GOLF
+            <span className="font-display text-[16px] font-bold tracking-tight text-foreground">
+              Minsk Golf
             </span>
             <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.22em] text-gold">
               Live Scoring

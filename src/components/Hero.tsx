@@ -70,11 +70,11 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
-            className="font-display mt-6 font-semibold leading-[0.88] tracking-tight"
-            style={{ fontSize: "clamp(3.25rem, 11vw, 8.5rem)" }}
+            className="font-display mt-6 font-bold leading-[0.85]"
+            style={{ fontSize: "clamp(3.5rem, 12vw, 9.5rem)", letterSpacing: "-0.055em" }}
           >
-            <span className="text-gradient-emerald block">LIVE</span>
-            <span className="text-gradient-emerald block">SCORING</span>
+            <span className="text-gradient-emerald block">Live</span>
+            <span className="text-gradient-emerald block">Scoring</span>
           </motion.h1>
 
           <motion.p
