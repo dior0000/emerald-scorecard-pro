@@ -14,19 +14,19 @@ export const Hero = () => {
   return (
     <section className="relative overflow-hidden">
       {/* Background: golf course photo + dark gradient overlay */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <img
           src={golfCourseBg}
           alt=""
           aria-hidden
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.28]"
-          style={{ filter: "saturate(1.05) contrast(1.05)" }}
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ filter: "saturate(1.1) contrast(1.05)" }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, hsl(150 25% 6% / 0.78) 0%, hsl(150 25% 6% / 0.6) 40%, hsl(150 25% 6% / 0.95) 100%), radial-gradient(1200px 700px at 30% 20%, hsl(158 60% 14% / 0.55), transparent 60%), radial-gradient(900px 600px at 90% 80%, hsl(158 70% 18% / 0.4), transparent 60%)",
+              "linear-gradient(180deg, hsl(150 25% 6% / 0.55) 0%, hsl(150 25% 6% / 0.45) 45%, hsl(150 25% 6% / 0.95) 100%), radial-gradient(1200px 700px at 30% 20%, hsl(158 60% 14% / 0.35), transparent 60%)",
           }}
         />
         <svg
@@ -51,7 +51,7 @@ export const Hero = () => {
         </svg>
       </div>
 
-      <div className="container relative grid grid-cols-1 items-center gap-14 pb-24 pt-16 lg:grid-cols-[1.4fr_1fr] lg:gap-10 lg:pb-32 lg:pt-24">
+      <div className="container relative z-10 grid grid-cols-1 items-center gap-14 pb-24 pt-16 lg:grid-cols-[1.4fr_1fr] lg:gap-10 lg:pb-32 lg:pt-24">
         {/* Left column */}
         <div className="max-w-2xl">
           <motion.div
