@@ -36,7 +36,7 @@ export const LeaderPreviewCard = () => {
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-3 divide-x divide-white/[0.06] rounded-xl border border-white/[0.06] bg-black/20 py-3">
+      <div className="mt-5 grid grid-cols-3 rounded-xl border border-white/[0.06] bg-black/20 py-3">
         <div className="flex flex-col items-center">
           <span className="overline text-[10px] text-muted-foreground">Поз.</span>
           <span className="font-mono-tab mt-1.5 text-lg font-semibold text-gold">T1</span>
