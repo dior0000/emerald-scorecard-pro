@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BarChart3 } from "lucide-react";
 import { LiveDot } from "./LiveDot";
 import { LeaderPreviewCard } from "./LeaderPreviewCard";
-import golfCourseBg from "@/assets/golf-course-bg.jpg";
+import golfCourseBg from "@/assets/golf-course-bg.webp";
 
 const today = new Date().toLocaleDateString("ru-RU", {
   day: "numeric",
