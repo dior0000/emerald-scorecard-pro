@@ -71,7 +71,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
             className="display-hero mt-6"
-            style={{ fontSize: "clamp(2rem, 5.5vw, 4.5rem)" }}
+            style={{ fontSize: "clamp(3.25rem, 10vw, 8rem)" }}
           >
             <span className="text-gradient-emerald block">Live</span>
             <span className="text-gradient-emerald block">Scoring</span>
