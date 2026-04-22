@@ -110,7 +110,7 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/[0.06] pt-6"
+            className="mt-12 grid max-w-md grid-cols-3 gap-6 pt-2"
           >
             {[
               { v: "12", l: "Турниров" },
