@@ -34,10 +34,10 @@ export const TournamentsEmpty = () => {
           <circle cx="108" cy="156" r="3.5" fill="hsl(var(--gold))" />
         </svg>
 
-        <h3 className="font-display mt-4 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        <h3 className="display-h3 mt-4 text-3xl text-foreground sm:text-4xl">
           Турниры скоро появятся
         </h3>
-        <p className="mt-3 max-w-md text-[15px] leading-relaxed text-muted-foreground">
+        <p className="ui-label mt-3 max-w-md text-[15px] text-muted-foreground">
           Создайте первый турнир или дождитесь анонса от организатора — мы пришлём уведомление,
           когда стартует ближайшее событие.
         </p>

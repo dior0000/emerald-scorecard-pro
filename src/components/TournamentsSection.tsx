@@ -32,10 +32,10 @@ export const TournamentsSection = () => {
 
       <div className="container relative z-10 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
         <div>
-          <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-primary">
+          <div className="overline text-[11px] font-medium text-primary">
             Активные события
           </div>
-          <h2 className="font-display mt-2 text-5xl font-bold text-foreground sm:text-6xl">
+          <h2 className="display-h2 mt-2 text-5xl text-foreground sm:text-6xl">
             Турниры
           </h2>
         </div>
