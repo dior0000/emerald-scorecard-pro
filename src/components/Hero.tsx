@@ -61,7 +61,7 @@ export const Hero = () => {
             className="flex flex-wrap items-center gap-3"
           >
             <LiveDot label="Live" />
-            <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
+            <span className="overline text-xs text-muted-foreground">
               {today}
             </span>
           </motion.div>
@@ -70,8 +70,8 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
-            className="font-display mt-6 font-bold leading-[0.85]"
-            style={{ fontSize: "clamp(3.5rem, 12vw, 9.5rem)", letterSpacing: "-0.055em" }}
+            className="display-hero mt-6"
+            style={{ fontSize: "clamp(3.5rem, 12vw, 9.5rem)" }}
           >
             <span className="text-gradient-emerald block">Live</span>
             <span className="text-gradient-emerald block">Scoring</span>
@@ -81,7 +81,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-7 max-w-[480px] text-[15px] leading-relaxed text-muted-foreground"
+            className="ui-label mt-7 max-w-[480px] text-[15px] text-muted-foreground"
           >
             Записывайте счёт раунда в реальном времени, следите за лидербордом турниров Minsk Golf
             и делитесь результатами одним нажатием.
@@ -119,7 +119,7 @@ export const Hero = () => {
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-mono-tab text-2xl font-semibold text-foreground">{s.v}</div>
-                <div className="mt-1 text-[11px] uppercase tracking-wider text-muted-foreground">
+                <div className="overline mt-1.5 text-[10px] text-muted-foreground">
                   {s.l}
                 </div>
               </div>
