@@ -71,7 +71,7 @@ export const TournamentsSection = () => {
         </div>
       </div>
 
-      <div className="mt-10">
+      <div className="container relative z-10 mt-10">
         <TournamentsEmpty />
       </div>
     </section>
