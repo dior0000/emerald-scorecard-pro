@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BarChart3 } from "lucide-react";
 import { LiveDot } from "./LiveDot";
 import { LeaderPreviewCard } from "./LeaderPreviewCard";
+import golfCourseBg from "@/assets/golf-course-bg.jpg";
 
 const today = new Date().toLocaleDateString("ru-RU", {
   day: "numeric",
@@ -12,13 +13,20 @@ const today = new Date().toLocaleDateString("ru-RU", {
 export const Hero = () => {
   return (
     <section className="relative overflow-hidden">
-      {/* Background: radial gradient + golf course outline */}
+      {/* Background: golf course photo + dark gradient overlay */}
       <div className="pointer-events-none absolute inset-0 -z-10">
+        <img
+          src={golfCourseBg}
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.28]"
+          style={{ filter: "saturate(1.05) contrast(1.05)" }}
+        />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(1200px 700px at 30% 20%, hsl(158 60% 14% / 0.9), transparent 60%), radial-gradient(900px 600px at 90% 80%, hsl(158 70% 18% / 0.55), transparent 60%)",
+              "linear-gradient(180deg, hsl(150 25% 6% / 0.78) 0%, hsl(150 25% 6% / 0.6) 40%, hsl(150 25% 6% / 0.95) 100%), radial-gradient(1200px 700px at 30% 20%, hsl(158 60% 14% / 0.55), transparent 60%), radial-gradient(900px 600px at 90% 80%, hsl(158 70% 18% / 0.4), transparent 60%)",
           }}
         />
         <svg
