@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TournamentsEmpty } from "./TournamentsEmpty";
+import { TournamentSchedule } from "./TournamentSchedule";
 import golfParallax from "@/assets/golf-parallax.webp";
 
 const FILTERS = ["Все", "Активные", "Предстоящие", "Завершённые"] as const;
@@ -72,7 +72,7 @@ export const TournamentsSection = () => {
       </div>
 
       <div className="container relative z-10 mt-10">
-        <TournamentsEmpty />
+        <TournamentSchedule />
       </div>
     </section>
   );
