@@ -26,7 +26,7 @@ export const Hero = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, hsl(0 0% 100% / 0.78) 0%, hsl(0 0% 100% / 0.85) 45%, hsl(150 30% 99% / 0.98) 100%), radial-gradient(900px 600px at 25% 20%, hsl(var(--primary) / 0.18), transparent 60%), radial-gradient(700px 500px at 80% 30%, hsl(var(--teal) / 0.14), transparent 65%), radial-gradient(600px 500px at 60% 90%, hsl(var(--gold) / 0.14), transparent 65%)",
+              "linear-gradient(180deg, hsl(0 0% 100% / 0.25) 0%, hsl(0 0% 100% / 0.35) 50%, hsl(150 30% 99% / 0.92) 100%), radial-gradient(900px 600px at 25% 20%, hsl(var(--primary) / 0.15), transparent 60%), radial-gradient(700px 500px at 80% 30%, hsl(var(--teal) / 0.12), transparent 65%)",
           }}
         />
         <svg

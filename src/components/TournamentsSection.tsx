@@ -18,14 +18,14 @@ export const TournamentsSection = () => {
           alt=""
           aria-hidden
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover opacity-70"
-          style={{ filter: "saturate(1.1)" }}
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ filter: "saturate(1.15) contrast(1.05)" }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, hsl(150 30% 99% / 0.98) 0%, hsl(0 0% 100% / 0.7) 30%, hsl(0 0% 100% / 0.8) 70%, hsl(150 30% 99% / 1) 100%)",
+              "linear-gradient(180deg, hsl(150 30% 99% / 0.92) 0%, hsl(0 0% 100% / 0.35) 30%, hsl(0 0% 100% / 0.4) 70%, hsl(150 30% 99% / 0.95) 100%)",
           }}
         />
       </div>
