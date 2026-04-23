@@ -6,59 +6,59 @@
 
 @layer base {
   :root {
-    /* Core palette (HSL) — derived from #0A1410, #15B87F, #D4B87A */
-    --background: 150 25% 6%;        /* #0A1410 */
-    --foreground: 120 8% 96%;         /* #F5F7F5 */
+    /* Light theme — clean white with deep emerald accents */
+    --background: 150 30% 99%;        /* near-white with green hint */
+    --foreground: 150 30% 8%;         /* deep ink */
 
-    --surface: 150 22% 9%;            /* #0F1F18 */
+    --surface: 0 0% 100%;             /* pure white surfaces */
 
-    --card: 150 22% 9%;
-    --card-foreground: 120 8% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 30% 8%;
 
-    --popover: 150 25% 7%;
-    --popover-foreground: 120 8% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 8%;
 
-    --primary: 158 79% 40%;           /* #15B87F */
-    --primary-foreground: 150 30% 6%;
-    --primary-glow: 158 80% 55%;
+    --primary: 158 82% 32%;           /* deeper emerald for contrast on white */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 158 75% 45%;
 
-    --secondary: 150 18% 14%;
-    --secondary-foreground: 120 8% 96%;
+    --secondary: 150 20% 96%;
+    --secondary-foreground: 150 30% 8%;
 
-    --muted: 150 15% 12%;
-    --muted-foreground: 145 12% 61%;  /* #8FA89B */
+    --muted: 150 18% 95%;
+    --muted-foreground: 150 12% 38%;
 
-    --accent: 150 18% 14%;
-    --accent-foreground: 120 8% 96%;
+    --accent: 150 20% 94%;
+    --accent-foreground: 150 30% 8%;
 
-    --gold: 38 65% 68%;               /* warmer gold */
-    --gold-foreground: 150 30% 6%;
+    --gold: 36 70% 48%;               /* deeper gold readable on white */
+    --gold-foreground: 0 0% 100%;
 
-    --teal: 180 70% 55%;              /* cool aqua accent */
-    --coral: 12 85% 65%;              /* warm coral accent */
-    --violet: 260 70% 68%;            /* subtle violet */
+    --teal: 184 75% 38%;              /* cool aqua, darker for contrast */
+    --coral: 12 78% 52%;
+    --violet: 260 60% 52%;
 
-    --destructive: 0 70% 55%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 150 12% 28%;
-    --input: 150 12% 28%;
-    --ring: 158 79% 50%;
+    --border: 150 18% 82%;            /* crisp visible border */
+    --input: 150 18% 82%;
+    --ring: 158 82% 38%;
 
     --radius: 0.875rem;
 
-    --sidebar-background: 150 25% 6%;
-    --sidebar-foreground: 120 8% 96%;
-    --sidebar-primary: 158 79% 40%;
-    --sidebar-primary-foreground: 150 30% 6%;
-    --sidebar-accent: 150 18% 14%;
-    --sidebar-accent-foreground: 120 8% 96%;
-    --sidebar-border: 150 15% 18%;
-    --sidebar-ring: 158 79% 45%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 150 30% 8%;
+    --sidebar-primary: 158 82% 32%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 20% 94%;
+    --sidebar-accent-foreground: 150 30% 8%;
+    --sidebar-border: 150 18% 82%;
+    --sidebar-ring: 158 82% 38%;
   }
 
   .dark {
-    /* Same — app is dark by default */
+    /* Keep dark variant available */
     --background: 150 25% 6%;
     --foreground: 120 8% 96%;
     --surface: 150 22% 9%;
@@ -91,7 +91,7 @@
   }
 
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   body {
@@ -162,21 +162,21 @@
   }
 
   .glass {
-    background: hsl(var(--surface) / 0.55);
+    background: hsl(0 0% 100% / 0.75);
     backdrop-filter: blur(20px) saturate(140%);
     -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid hsl(0 0% 100% / 0.14);
+    border: 1.5px solid hsl(var(--border));
   }
 
   .glass-strong {
-    background: hsl(var(--surface) / 0.78);
+    background: hsl(0 0% 100% / 0.92);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border-bottom: 1px solid hsl(0 0% 100% / 0.14);
+    border-bottom: 1.5px solid hsl(var(--border));
   }
 
   .text-gradient-emerald {
-    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(var(--teal)) 35%, hsl(120 8% 96%) 60%, hsl(var(--gold)) 100%);
+    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(var(--teal)) 45%, hsl(var(--gold)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

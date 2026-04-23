@@ -26,7 +26,7 @@ export const Hero = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, hsl(150 25% 6% / 0.55) 0%, hsl(150 25% 6% / 0.45) 45%, hsl(150 25% 6% / 0.95) 100%), radial-gradient(900px 600px at 25% 20%, hsl(var(--primary) / 0.22), transparent 60%), radial-gradient(700px 500px at 80% 30%, hsl(var(--teal) / 0.14), transparent 65%), radial-gradient(600px 500px at 60% 90%, hsl(var(--violet) / 0.12), transparent 65%)",
+              "linear-gradient(180deg, hsl(0 0% 100% / 0.78) 0%, hsl(0 0% 100% / 0.85) 45%, hsl(150 30% 99% / 0.98) 100%), radial-gradient(900px 600px at 25% 20%, hsl(var(--primary) / 0.18), transparent 60%), radial-gradient(700px 500px at 80% 30%, hsl(var(--teal) / 0.14), transparent 65%), radial-gradient(600px 500px at 60% 90%, hsl(var(--gold) / 0.14), transparent 65%)",
           }}
         />
         <svg
@@ -99,7 +99,7 @@ export const Hero = () => {
               Войти и записать счёт
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
-            <button className="inline-flex h-[52px] items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.02] px-6 text-[15px] font-medium text-foreground transition-all hover:border-white/20 hover:bg-white/[0.05] active:scale-[0.98]">
+            <button className="inline-flex h-[52px] items-center gap-2.5 rounded-xl border-2 border-foreground/15 bg-background/60 px-6 text-[15px] font-medium text-foreground transition-all hover:border-foreground/30 hover:bg-background active:scale-[0.98]">
               <BarChart3 className="h-4 w-4 text-gold" />
               Смотреть лидерборд
             </button>

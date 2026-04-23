@@ -8,7 +8,7 @@ export const TournamentsEmpty = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="relative overflow-hidden rounded-[20px] border border-dashed border-white/10 bg-gradient-to-b from-white/[0.02] to-transparent p-10 sm:p-16"
+      className="relative overflow-hidden rounded-[20px] border-2 border-dashed border-border bg-card p-10 sm:p-16"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div
@@ -47,7 +47,7 @@ export const TournamentsEmpty = () => {
             <Plus className="h-4 w-4" />
             Создать турнир
           </button>
-          <button className="inline-flex h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-5 text-sm font-medium text-foreground transition-all hover:border-white/20 hover:bg-white/[0.05] active:scale-[0.98]">
+          <button className="inline-flex h-11 items-center gap-2 rounded-xl border-2 border-border bg-background px-5 text-sm font-medium text-foreground transition-all hover:border-foreground/30 hover:bg-muted active:scale-[0.98]">
             <Bell className="h-4 w-4 text-gold" />
             Уведомить меня
           </button>

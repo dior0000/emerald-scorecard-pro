@@ -25,7 +25,7 @@ export const TournamentsSection = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, hsl(150 25% 6% / 0.95) 0%, hsl(150 25% 6% / 0.55) 30%, hsl(150 25% 6% / 0.7) 70%, hsl(150 25% 6% / 0.98) 100%)",
+              "linear-gradient(180deg, hsl(150 30% 99% / 0.98) 0%, hsl(0 0% 100% / 0.7) 30%, hsl(0 0% 100% / 0.8) 70%, hsl(150 30% 99% / 1) 100%)",
           }}
         />
       </div>
@@ -62,7 +62,7 @@ export const TournamentsSection = () => {
                   />
                 )}
                 {!isActive && (
-                  <span className="absolute inset-0 -z-10 rounded-full border border-white/10 bg-white/[0.02]" />
+                  <span className="absolute inset-0 -z-10 rounded-full border-2 border-border bg-background/60" />
                 )}
                 {f}
               </button>
