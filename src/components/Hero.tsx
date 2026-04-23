@@ -105,21 +105,28 @@ export const Hero = () => {
             </button>
           </motion.div>
 
-          {/* Subtle stats strip */}
+          {/* Stats strip — dark accent block for contrast */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 pt-2"
+            className="mt-12 inline-flex max-w-md items-stretch gap-0 rounded-2xl p-1 shadow-[0_18px_40px_-20px_hsl(150_30%_8%/0.45)]"
+            style={{
+              background:
+                "linear-gradient(160deg, hsl(150 35% 10%) 0%, hsl(158 40% 14%) 100%)",
+            }}
           >
             {[
-              { v: "12", l: "Турниров", c: "text-foreground" },
+              { v: "12", l: "Турниров", c: "text-white" },
               { v: "184", l: "Игроков", c: "text-teal" },
               { v: "9.6k", l: "Сыграно лунок", c: "text-gold" },
-            ].map((s) => (
-              <div key={s.l}>
+            ].map((s, i) => (
+              <div
+                key={s.l}
+                className={`flex flex-col items-start px-5 py-3 ${i > 0 ? "border-l border-white/10" : ""}`}
+              >
                 <div className={`font-mono-tab text-2xl font-semibold ${s.c}`}>{s.v}</div>
-                <div className="overline mt-1.5 text-[10px] text-muted-foreground">
+                <div className="overline mt-1.5 text-[10px] text-white/55">
                   {s.l}
                 </div>
               </div>
