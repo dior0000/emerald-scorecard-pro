@@ -41,9 +41,9 @@
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 150 15% 18%;
-    --input: 150 15% 18%;
-    --ring: 158 79% 45%;
+    --border: 150 12% 28%;
+    --input: 150 12% 28%;
+    --ring: 158 79% 50%;
 
     --radius: 0.875rem;
 
@@ -79,9 +79,9 @@
     --gold-foreground: 150 30% 6%;
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 98%;
-    --border: 150 15% 18%;
-    --input: 150 15% 18%;
-    --ring: 158 79% 45%;
+    --border: 150 12% 28%;
+    --input: 150 12% 28%;
+    --ring: 158 79% 50%;
   }
 }
 
@@ -165,14 +165,14 @@
     background: hsl(var(--surface) / 0.55);
     backdrop-filter: blur(20px) saturate(140%);
     -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid hsl(0 0% 100% / 0.06);
+    border: 1px solid hsl(0 0% 100% / 0.14);
   }
 
   .glass-strong {
     background: hsl(var(--surface) / 0.78);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border-bottom: 1px solid hsl(0 0% 100% / 0.06);
+    border-bottom: 1px solid hsl(0 0% 100% / 0.14);
   }
 
   .text-gradient-emerald {
