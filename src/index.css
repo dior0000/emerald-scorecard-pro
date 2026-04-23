@@ -162,21 +162,21 @@
   }
 
   .glass {
-    background: hsl(var(--surface) / 0.55);
+    background: hsl(0 0% 100% / 0.75);
     backdrop-filter: blur(20px) saturate(140%);
     -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid hsl(0 0% 100% / 0.14);
+    border: 1.5px solid hsl(var(--border));
   }
 
   .glass-strong {
-    background: hsl(var(--surface) / 0.78);
+    background: hsl(0 0% 100% / 0.92);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border-bottom: 1px solid hsl(0 0% 100% / 0.14);
+    border-bottom: 1.5px solid hsl(var(--border));
   }
 
   .text-gradient-emerald {
-    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(var(--teal)) 35%, hsl(120 8% 96%) 60%, hsl(var(--gold)) 100%);
+    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(var(--teal)) 45%, hsl(var(--gold)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
