@@ -113,12 +113,12 @@ export const Hero = () => {
             className="mt-12 grid max-w-md grid-cols-3 gap-6 pt-2"
           >
             {[
-              { v: "12", l: "Турниров" },
-              { v: "184", l: "Игроков" },
-              { v: "9.6k", l: "Сыграно лунок" },
+              { v: "12", l: "Турниров", c: "text-foreground" },
+              { v: "184", l: "Игроков", c: "text-teal" },
+              { v: "9.6k", l: "Сыграно лунок", c: "text-gold" },
             ].map((s) => (
               <div key={s.l}>
-                <div className="font-mono-tab text-2xl font-semibold text-foreground">{s.v}</div>
+                <div className={`font-mono-tab text-2xl font-semibold ${s.c}`}>{s.v}</div>
                 <div className="overline mt-1.5 text-[10px] text-muted-foreground">
                   {s.l}
                 </div>

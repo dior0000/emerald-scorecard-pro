@@ -53,8 +53,9 @@ export const LeaderPreviewCard = () => {
         </div>
       </div>
 
-      {/* subtle gold corner accent */}
-      <div className="pointer-events-none absolute -right-px -top-px h-16 w-16 rounded-tr-2xl bg-[radial-gradient(circle_at_top_right,hsl(var(--gold)/0.25),transparent_70%)]" />
+      {/* dual-color corner accents */}
+      <div className="pointer-events-none absolute -right-px -top-px h-16 w-16 rounded-tr-2xl bg-[radial-gradient(circle_at_top_right,hsl(var(--gold)/0.28),transparent_70%)]" />
+      <div className="pointer-events-none absolute -bottom-px -left-px h-16 w-16 rounded-bl-2xl bg-[radial-gradient(circle_at_bottom_left,hsl(var(--teal)/0.22),transparent_70%)]" />
     </motion.div>
   );
 };
