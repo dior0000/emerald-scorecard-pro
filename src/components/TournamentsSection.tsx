@@ -62,7 +62,7 @@ export const TournamentsSection = () => {
                   />
                 )}
                 {!isActive && (
-                  <span className="absolute inset-0 -z-10 rounded-full border border-white/10 bg-white/[0.02]" />
+                  <span className="absolute inset-0 -z-10 rounded-full border-2 border-border bg-background/60" />
                 )}
                 {f}
               </button>
