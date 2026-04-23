@@ -58,6 +58,9 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           foreground: "hsl(var(--gold-foreground))",
         },
+        teal: "hsl(var(--teal))",
+        coral: "hsl(var(--coral))",
+        violet: "hsl(var(--violet))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

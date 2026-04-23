@@ -31,8 +31,12 @@
     --accent: 150 18% 14%;
     --accent-foreground: 120 8% 96%;
 
-    --gold: 38 50% 65%;               /* #D4B87A */
+    --gold: 38 65% 68%;               /* warmer gold */
     --gold-foreground: 150 30% 6%;
+
+    --teal: 180 70% 55%;              /* cool aqua accent */
+    --coral: 12 85% 65%;              /* warm coral accent */
+    --violet: 260 70% 68%;            /* subtle violet */
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 98%;
@@ -101,8 +105,9 @@
     letter-spacing: -0.005em;
     line-height: 1.5;
     background-image:
-      radial-gradient(1200px 800px at 85% -10%, hsl(var(--primary) / 0.08), transparent 60%),
-      radial-gradient(900px 600px at -10% 10%, hsl(var(--primary) / 0.05), transparent 60%);
+      radial-gradient(1200px 800px at 85% -10%, hsl(var(--primary) / 0.10), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, hsl(var(--teal) / 0.07), transparent 60%),
+      radial-gradient(700px 500px at 50% 110%, hsl(var(--violet) / 0.06), transparent 65%);
     background-attachment: fixed;
   }
 
@@ -168,7 +173,7 @@
   }
 
   .text-gradient-emerald {
-    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(120 8% 96%) 55%, hsl(var(--gold)) 100%);
+    background: linear-gradient(100deg, hsl(var(--primary)) 0%, hsl(var(--teal)) 35%, hsl(120 8% 96%) 60%, hsl(var(--gold)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
