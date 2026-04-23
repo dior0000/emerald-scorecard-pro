@@ -99,7 +99,7 @@ export const Hero = () => {
               Войти и записать счёт
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
-            <button className="inline-flex h-[52px] items-center gap-2.5 rounded-xl border border-white/10 bg-white/[0.02] px-6 text-[15px] font-medium text-foreground transition-all hover:border-white/20 hover:bg-white/[0.05] active:scale-[0.98]">
+            <button className="inline-flex h-[52px] items-center gap-2.5 rounded-xl border-2 border-foreground/15 bg-background/60 px-6 text-[15px] font-medium text-foreground transition-all hover:border-foreground/30 hover:bg-background active:scale-[0.98]">
               <BarChart3 className="h-4 w-4 text-gold" />
               Смотреть лидерборд
             </button>
